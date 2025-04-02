@@ -5,11 +5,15 @@ const AuthForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
  
-  const handleSubmit = (e) => {
-    e.preventDefault('');
+
+   // Обрабатывает форму отправки
+  function handleSubmit (e) {
+    e.preventDefault();
     
-    console.log('Авторизация:', { email, password });
-       
+    console.log({email, password});
+    localStorage.email= email;
+    localStorage.password= password;
+  
   };
 
   return (

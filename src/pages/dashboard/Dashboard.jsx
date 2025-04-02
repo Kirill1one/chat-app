@@ -1,11 +1,12 @@
 import React from 'react';
+import './Dashboard.css';
 
 const Dashboard = () => {
-    return (
-        <div>
-            <h1>Dashboard</h1>
-        </div>
-    );
-}
+  return (
+    <div className="dashboard">
+      <h1>Welcome, {localStorage.getItem('email')}</h1>
+    </div>
+  );
+};
 
 export default Dashboard;
